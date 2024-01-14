@@ -135,6 +135,14 @@ form .form-row .textarea{
     position: relative;
 }
 @media (max-width: 700px) {
+    .container {
+        max-width: 700px;
+        width: 600px;
+        padding: 25px 10px 10px 67px; 
+    }
+    .radio-data{
+        margin: 0 0px;
+    }
   .container .text{
     font-size: 30px;
   }

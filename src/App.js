@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './component/style.css';
 import Form from './component/Form';
 import Home from './component/Home';
-import Test from './component/test';
 
 const App = () => {
   const [formDataList, setFormDataList] = useState([]);
@@ -36,7 +35,6 @@ const App = () => {
         <Routes>
         <Route path="/" element={<Home data={formDataList} onDelete={handleDelete} />}/>
         <Route path="/form" element= {<Form onSubmit={handleSubmitForm} />}/>
-        <Route path='/test' element= {<Test/>}/>
         </Routes>
         </BrowserRouter>
   );
