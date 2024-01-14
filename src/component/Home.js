@@ -52,14 +52,16 @@ const Home = ({ data, onDelete }) =>{
                             <th>HTML/CSS Proficiency Level</th>
                             <th>React.js Proficiency Level</th>
                             <th>WordPress Proficiency Level</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         {data.map((item, index) => (
                             <tr key={index}>
                                 <td>{item.name}</td>
-                                <td>{item.phone}</td>
                                 <td>{item.email}</td>
+                                <td>{item.phone}</td>
+                                <td>{item.university}</td>
                                 <td>{item.html_css}</td>
                                 <td>{item.react}</td>
                                 <td>{item.wordpress}</td>
